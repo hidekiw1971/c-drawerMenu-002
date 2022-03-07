@@ -26,6 +26,8 @@
   }
 }
 
+// 三本線を擬似要素を使って作成する。
+// ３本線の全てを中央に作成する
 .menu-btn__btn span,
 .menu-btn__btn span:before,
 .menu-btn__btn span:after {
@@ -36,6 +38,7 @@
   border-radius: 3px;
   background-color: #fff;
   position: absolute;
+  transition: 0.1s; // 動作のスピードを指定。
 
   @include mq(md) {
   }
@@ -43,6 +46,8 @@
   }
 }
 
+//３本線の上の線を作成する。
+// 中央から上に擬似要素を移動させる。
 .menu-btn__btn span:before {
   bottom: rem(15);
   @include mq(md) {
@@ -51,8 +56,44 @@
   }
 }
 
+//３本線の上の線を作成する。
+// 中央から下に擬似要素を移動させる。
 .menu-btn__btn span:after {
   top: rem(15);
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+// ３本線をタッチされた時の動作を実現。
+// 三本線のクロスを実行する。
+// 中央の線を消す。
+.menu-btn__btn--active span {
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0s;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+// 上線を45度傾ける。
+.menu-btn__btn--active span:before {
+  bottom: 0;
+  transform: rotate(45deg);
+  transition: 0.1s;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+// 下線を-45度傾ける。
+.menu-btn__btn--active span:after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: 0.1s;
   @include mq(md) {
   }
   @include mq(xl) {

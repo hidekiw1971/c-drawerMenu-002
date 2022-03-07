@@ -2,9 +2,11 @@
 
 ## 概要
 
-- drawer menu(ハンバーガーメニュ) ※input 使用タイプ
+- drawer menu(ハンバーガーメニュ) ※toggleClass(jQuery) 使用タイプ
+- レスポンシブ対応済(width: 100%;、height: 100%;で設定してます。)
 
-- JavaScript を使用せず、CSS だけでハンバーガーメニューを実装してます。
+- ボタンの on/off の判断を jQuery で判断してます。
+- toggleClass(jQuery)を使って、class を付けたり外したりして、css のメニューを open/close を実行します。
 
 ## 仕様
 
@@ -12,29 +14,7 @@
 
 ## 注意事項
 
-- 「menu-btn\_\_check」と「menu-list」は同階層にセットしないと checkbox が反応しないので注意。
 - 「class="menu-list"」で position: fixed;を使用して要素を浮かせてるので、「class="menu-btn"」の height がなくなってます。見た目が気になったので height: 100vh;を設定してます。
-
-- reset.scss の以下の部分を修正しないと input の checkbox が表示されません。
-- /_ フォームリセット _/
-  input,
-  button,
-  select,
-  textarea {
-  // -webkit-appearance: none; -> コメントにする
-  -moz-appearance: none;
-  // appearance: none; -> コメントにする
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  font: inherit;
-  outline: none;
-  }
-- input[type="checkbox"],
-  input[type="radio"] {
-  // display: none; -> コメントにする
-  display: block; -> none -> block に変更する
-  }
 
 ## 使い方
 
@@ -43,17 +23,12 @@
 - css: src -> module -> menu-list をコピペ。
 
 ## イメージ画像
-<img width="440" alt="image" src="https://user-images.githubusercontent.com/99580997/157044189-46fdd759-f01e-4fcf-a31c-04eef4404a3d.png">
-<img width="440" alt="image" src="https://user-images.githubusercontent.com/99580997/157044278-6e71a5cf-fe07-4947-addc-02b02e28a59e.png">
-<img width="807" alt="image" src="https://user-images.githubusercontent.com/99580997/157044340-db62c1e7-02ac-45e3-8d46-db53b6112b35.png">
-<img width="796" alt="image" src="https://user-images.githubusercontent.com/99580997/157044387-fe666212-b595-4499-88bd-903a31478324.png">
-<img width="1305" alt="image" src="https://user-images.githubusercontent.com/99580997/157044439-19e3c470-bc10-40a8-aeb8-0c9954feaac9.png">
-<img width="1305" alt="image" src="https://user-images.githubusercontent.com/99580997/157044467-809fceaa-d5f9-420f-9f7c-7badccdbb44c.png">
 
+-
 
 ## portfolio url:
 
-- https://css-md-0017.wtb.cfbx.jp/
+- https://css-md-0018.wtb.cfbx.jp/
 
 ## 参考にしたサイト
 
@@ -64,8 +39,7 @@
 
 ## 更新履歴
 
-- 2022/3/7 初版 完成(sp、tb、pc、レスポンス対応済み)
-- 2022/3/7 初版 作成中(三本線まで完成)
+- 2022/3/8 初版作成完了（レスポンシブ対応済）
 
 ## 環境・使い方
 

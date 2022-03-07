@@ -32,7 +32,7 @@
 }
 
 // check box on/off setteing
-#menu-btn__check:checked ~ .menu-list {
+.menu-list__open {
   left: 0;
   // decoration
   transition: 0.1s;
