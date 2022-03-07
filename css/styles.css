@@ -174,9 +174,6 @@ select::-ms-expand {
   display: none;
 }
 
-.menu-btn {
-  height: 100vh;
-}
 .menu-btn__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +235,9 @@ select::-ms-expand {
           transform: rotate(-45deg);
   -webkit-transition: 0.1s;
   transition: 0.1s;
+}
+.menu-btn {
+  height: 100vh;
 }
 .menu-list {
   display: inline-block;
