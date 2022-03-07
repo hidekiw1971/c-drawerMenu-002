@@ -1,0 +1,11 @@
+@use "global" as *;
+// sp size  375px -> sp
+// tb size  768px -> md
+// pc size 1440px -> xl
+.menu-btn {
+  height: 100vh; // 子要素でpositionを使用してheightがなくなってるので、100vhを設定してます。不要かも。
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

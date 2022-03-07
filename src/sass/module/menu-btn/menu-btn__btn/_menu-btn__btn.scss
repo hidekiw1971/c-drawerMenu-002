@@ -1,0 +1,60 @@
+@use "global" as *;
+// sp size  375px -> sp
+// tb size  768px -> md
+// pc size 1440px -> xl
+
+.menu-btn__btn {
+  display: flex;
+  width: rem(60);
+  height: rem(60);
+  background-color: #333;
+
+  // menu-btn__btnの位置調整
+  position: fixed;
+  top: 0px;
+  right: 0px;
+
+  // 三本線の位置調整
+  justify-content: center;
+  align-items: center;
+
+  // layer
+  z-index: 10;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.menu-btn__btn span,
+.menu-btn__btn span:before,
+.menu-btn__btn span:after {
+  content: "";
+  display: block;
+  width: rem(50);
+  height: rem(5);
+  border-radius: 3px;
+  background-color: #fff;
+  position: absolute;
+
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.menu-btn__btn span:before {
+  bottom: rem(15);
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.menu-btn__btn span:after {
+  top: rem(15);
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
