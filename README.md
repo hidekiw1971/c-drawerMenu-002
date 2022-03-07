@@ -3,14 +3,13 @@
 ## 概要
 
 - drawer menu(ハンバーガーメニュ) ※toggleClass(jQuery) 使用タイプ
-- レスポンシブ対応済(width: 100%;、height: 100%;で設定してます。)
 
-- ボタンの on/off の判断を jQuery で判断してます。
-- toggleClass(jQuery)を使って、class を付けたり外したりして、css のメニューを open/close を実行します。
 
 ## 仕様
-
--　<input type="checkbox" id="menu-btn-check">を使用して実装。
+- 「toggleClass」 jQueryを使用して実装。
+- レスポンシブ対応済(width: 100%;、height: 100%;で設定してます。)
+- ボタンの on/off の判断を jQuery で判断してます。
+- toggleClass(jQuery)を使って、class を付けたり外したりして、css のメニューを open/close を実行します。
 
 ## 注意事項
 
@@ -23,8 +22,13 @@
 - css: src -> module -> menu-list をコピペ。
 
 ## イメージ画像
+<img width="392" alt="image" src="https://user-images.githubusercontent.com/99580997/157068886-5ac2ebdc-d7fc-44c9-9de0-4b6cf73b18cc.png">
+<img width="392" alt="image" src="https://user-images.githubusercontent.com/99580997/157068978-95476ba8-7c4a-4ceb-85ab-40257b493c5a.png">
+<img width="801" alt="image" src="https://user-images.githubusercontent.com/99580997/157069037-1bb53a54-4c16-4ac3-a5fe-5ecbb1d140a7.png">
+<img width="801" alt="image" src="https://user-images.githubusercontent.com/99580997/157069082-c00a3c3f-660c-4037-916f-48c966530867.png">
+<img width="952" alt="image" src="https://user-images.githubusercontent.com/99580997/157069152-27b11f63-2083-471b-997e-d52d100673be.png">
+<img width="952" alt="image" src="https://user-images.githubusercontent.com/99580997/157069198-7ac9cfdb-d156-4d12-92b6-942c0b66cd12.png">
 
--
 
 ## portfolio url:
 
